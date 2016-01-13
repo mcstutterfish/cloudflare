@@ -471,6 +471,8 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_minify($zone_identifier, $value) {
+		
+		$data = ['value' => $value];
 
 		return $this->patch('zones/' . $zone_identifier . '/settings/minify', $value);
 
@@ -485,6 +487,8 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_mobile_redirect($zone_identifier, $value) {
+		
+		$data = ['value' => $value];
 
 		return $this->patch('zones/' . $zone_identifier . '/settings/minify', $value);
 
@@ -499,6 +503,8 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_mirage($zone_identifier, $value = 'off') {
+		
+		$data = ['value' => $value];
 
 		return $this->patch('zones/' . $zone_identifier . '/settings/mirage', $value);
 
@@ -513,6 +519,8 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_polish($zone_identifier, $value = 'off') {
+		
+		$data = ['value' => $value];
 
 		return $this->patch('zones/' . $zone_identifier . '/settings/polish', $value);
 
@@ -527,6 +535,8 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_rocket_loader($zone_identifier, $value = 'off') {
+		
+		$data = ['value' => $value];
 
 		return $this->patch('zones/' . $zone_identifier . '/settings/rocket_loader', $value);
 
@@ -541,6 +551,8 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_security_level($zone_identifier, $value = 'medium') {
+		
+		$data = ['value' => $value];
 
 		return $this->patch('zones/' . $zone_identifier . '/settings/security_level', $value);
 
@@ -555,6 +567,8 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_server_side_exclude($zone_identifier, $value = 'on') {
+		
+		$data = ['value' => $value];
 
 		return $this->patch('zones/' . $zone_identifier . '/settings/server_side_exclude', $value);
 
@@ -569,6 +583,8 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_ssl($zone_identifier, $value = 'off') {
+		
+		$data = ['value' => $value];
 
 		return $this->patch('zones/' . $zone_identifier . '/settings/ssl', $value);
 
@@ -583,6 +599,8 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_waf($zone_identifier, $value = 'off') {
+		
+		$data = ['value' => $value];
 
 		return $this->patch('zones/' . $zone_identifier . '/settings/waf', $value);
 
