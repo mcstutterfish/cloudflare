@@ -471,8 +471,10 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_minify($zone_identifier, $value) {
+		
+		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/minify', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/minify', $data);
 
 	}
 
@@ -485,8 +487,10 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_mobile_redirect($zone_identifier, $value) {
+		
+		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/minify', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/minify', $data);
 
 	}
 
@@ -499,8 +503,10 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_mirage($zone_identifier, $value = 'off') {
+		
+		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/mirage', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/mirage', $data);
 
 	}
 
@@ -513,8 +519,10 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_polish($zone_identifier, $value = 'off') {
+		
+		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/polish', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/polish', $data);
 
 	}
 
@@ -527,8 +535,10 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_rocket_loader($zone_identifier, $value = 'off') {
+		
+		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/rocket_loader', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/rocket_loader', $data);
 
 	}
 
@@ -541,8 +551,10 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_security_level($zone_identifier, $value = 'medium') {
+		
+		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/security_level', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/security_level', $data);
 
 	}
 
@@ -555,8 +567,10 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_server_side_exclude($zone_identifier, $value = 'on') {
+		
+		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/server_side_exclude', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/server_side_exclude', $data);
 
 	}
 
@@ -569,8 +583,10 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_ssl($zone_identifier, $value = 'off') {
+		
+		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/ssl', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/ssl', $data);
 
 	}
 
@@ -583,8 +599,10 @@ class Settings extends Api {
 	 * @return array|mixed
 	 */
 	public function change_waf($zone_identifier, $value = 'off') {
+		
+		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/waf', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/waf', $data);
 
 	}
 
