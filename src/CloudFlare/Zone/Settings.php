@@ -474,7 +474,7 @@ class Settings extends Api {
 		
 		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/minify', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/minify', $data);
 
 	}
 
@@ -490,7 +490,7 @@ class Settings extends Api {
 		
 		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/minify', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/minify', $data);
 
 	}
 
@@ -506,7 +506,7 @@ class Settings extends Api {
 		
 		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/mirage', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/mirage', $data);
 
 	}
 
@@ -522,7 +522,7 @@ class Settings extends Api {
 		
 		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/polish', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/polish', $data);
 
 	}
 
@@ -538,7 +538,7 @@ class Settings extends Api {
 		
 		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/rocket_loader', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/rocket_loader', $data);
 
 	}
 
@@ -554,7 +554,7 @@ class Settings extends Api {
 		
 		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/security_level', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/security_level', $data);
 
 	}
 
@@ -570,7 +570,7 @@ class Settings extends Api {
 		
 		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/server_side_exclude', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/server_side_exclude', $data);
 
 	}
 
@@ -586,7 +586,7 @@ class Settings extends Api {
 		
 		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/ssl', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/ssl', $data);
 
 	}
 
@@ -602,7 +602,7 @@ class Settings extends Api {
 		
 		$data = ['value' => $value];
 
-		return $this->patch('zones/' . $zone_identifier . '/settings/waf', $value);
+		return $this->patch('zones/' . $zone_identifier . '/settings/waf', $data);
 
 	}
 
